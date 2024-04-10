@@ -4,15 +4,23 @@ Open Source fork from excalidraw
 
 #### Install
 
-- Install Yarn -> https://linuxize.com/post/how-to-install-yarn-on-ubuntu-20-04/
+- Install Yarn 
+``` curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - ```
+``` echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list ```
+``` sudo apt update ```
+``` sudo apt install yarn ```
 
-```nvm use``` # there is a .nvmrc that you can use ^_^
+- The command above will also install Node.js . If you installed Node trough nvm, skip the Node.js installation with:
 
-```yarn``` # Installs Dependencies
-```yarn start``` Starts the App
+``` sudo apt install --no-install-recommends yarn ```
+
+``` nvm use ``` # there is a .nvmrc that you can use ^_^
+
+``` yarn ``` # Installs Dependencies
+``` yarn start ``` Starts the App
 
 #### Troubleshooting
 
 - Error: ENOSPC: System limit for number of file watchers reached
 
-```echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p```
+``` echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p ```
