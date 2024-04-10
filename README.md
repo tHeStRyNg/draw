@@ -26,6 +26,10 @@ Open Source fork from excalidraw
 
 ``` yarn start ``` Starts the App
 
+Install pm2 for fork process on shell ``` npm install pm2 -g ```
+
+``` start with pm2 --name Tornado start yarn -- dev ```
+
 #### Troubleshooting
 
 - Error: ENOSPC: System limit for number of file watchers reached
