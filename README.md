@@ -4,6 +4,8 @@ Open Source fork from excalidraw
 
 #### Install
 
+- Server -> Debian fork ubt 20x
+
 - Install Yarn 
 
 ``` curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - ```
